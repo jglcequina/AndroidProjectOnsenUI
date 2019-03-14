@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <link rel="stylesheet" href="css/onsenui.css">
+  <link rel="stylesheet" href="css/onsen-css-components.min.css">
+  
+</head>
+<body >
+    <ons-page >
+        <ons-toolbar>
+            <div class ="center" ><b style="font-family:sans-serif">Simple Unit Converter</b></div>
+          </ons-toolbar>
+
+        <ons-card>
+          <div class="content" align = "center"  >
+            <label class="radio-button radio-button--material">
+                <input type="radio" class="radio-button__input radio-button--material__input" value = "time" name="r" id = "time">
+                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                Time
+              </label>
+
+              <label class="radio-button radio-button--material">
+                <input type="radio" class="radio-button__input radio-button--material__input" value = "length" name="r" id = "length"> 
+                <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                Length
+              </label>
+
+              <label class="radio-button radio-button--material">
+                  <input type="radio" class="radio-button__input radio-button--material__input" value = "mass" name="r" id = "mass">
+                  <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+                  Mass
+              </label>
+          </div>
+        </ons-card>
+
+        <ons-card>
+          <div align = "center">
+            <table>
+              <tr>
+            <th><input type="text"  style= "width: 150px;text-align: center;height: 150px; font-size: 50px"  placeholder="0" name = "fromValue"> </tr>
+          </tr>
+            <ons-select style= "width: auto" name = "unit" >
+              <select  class="select-input" id = "unit">
+              </select>
+            </ons-select>
+       
+            <h1>To:</h1>
+            <ons-select style= "width: auto" name = "unit2">
+                <select class="select-input" id = "unit2">
+                </select>
+            </ons-select>
+          </table>
+          </div>
+        </br>
+          <div class="block">
+            <button class="button--large--cta" style="width: 50%; margin: 0 auto;" id = "convertBtn" >Convert</button>
+          </div>
+        </ons-card>
+
+        <ons-card>
+          <div align = "center" class="title" >
+            Result: <span id = "result"> </span>
+          </div>
+        </ons-card>
+
+
+      </ons-page>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/onsenui.min.js"></script>
+    <script src="js/index.js"></script>
+   
+    
+</body>
+</html>
